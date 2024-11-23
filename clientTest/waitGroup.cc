@@ -11,5 +11,6 @@ void sigHandler(int num) {
 
 int main() {
   signal(SIGINT, sigHandler);
+
   waitGroup.wait();
 }
